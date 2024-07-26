@@ -2,7 +2,6 @@ from tkinter import *
 import calendar
 import datetime
 
-
 root = Tk()
 root.title("Calendar Example")
 days = []
@@ -23,7 +22,7 @@ for n in range(7):
     lbl = Label(root, text=calendar.day_abbr[n], width=1, height=1, font='Arial 10 bold', fg='darkblue')
     lbl.grid(row=1, column=n, sticky=NSEW)
     days.append(lbl)
-
+# выводим строки календаря
 for row in range(6):
     for col in range(7):
         lbl = Label(root, text='0', width=4, height=2, font='Arial 16 bold')
